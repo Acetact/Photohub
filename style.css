@@ -1,0 +1,361 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and text styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+a[href="#work"] {
+  color: #007bff; /* Change link color as desired */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Create a header with a background and centered text */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Apply some styling to headings */
+h1,
+h2 {
+  color: #333;
+}
+
+/* Center the content and add some padding */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style a button */
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+}
+
+.logo img {
+  width: 80px; /* Adjust the size of the logo as needed */
+  margin-right: 5px; /* Reduce the spacing between the logo and links */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0f0f0;
+}
+
+/* Add the following CSS to make the banner's height adjustable and center the text */
+.banner {
+  max-height: 80vh; /* Adjust the percentage as needed */
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Allow positioning of child elements */
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+/* Add the following CSS for the banner text */
+.banner-text {
+  font-family: "System UI", sans-serif;
+  text-align: center;
+  color: #fff; /* Change the text color to white */
+  padding: 20px 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Ensure the text is on top */
+}
+
+.banner-title {
+  font-size: 54px; /* Increase font size to make it bigger */
+  font-family: "System UI", sans-serif;
+  font-weight: bold; /* Make the font bolder */
+  color: #151515; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+  position: flex;
+  text-transform: uppercase; /* Convert text to uppercase for an attractive look */
+  letter-spacing: 1px; /* Add letter spacing for an attractive design */
+}
+
+.banner-caption {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
+}
+
+/* CSS for the About section */
+.about-section {
+  background-color: #f0f0f0; /* Set a background color */
+  padding: 50px; /* Add padding for spacing */
+  text-align: center; /* Center-align the content */
+  border-top: 2px solid #ccc; /* Add a top border for separation */
+}
+
+.about-section h2 {
+  font-size: 28px; /* Adjust the font size for the heading */
+  color: #333; /* Heading color */
+  padding: 40px 0px 10px 0px;
+}
+
+.about-section p {
+  font-size: 16px; /* Adjust the font size for the description */
+  color: #555; /* Description color */
+  line-height: 1.6; /* Adjust line height for readability */
+  margin: 30px 150px 50px 150px; /* Add top margin for spacing */
+}
+
+.work-section {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 80px 50px 50px 50px;
+  border-top: 1px solid #ccc;
+  margin: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center; /* Center align the items vertically */
+}
+
+.work-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+}
+
+.video-container {
+  flex: 1;
+  margin-left: 80px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 2;
+  text-align: left;
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+/* CSS for the Resume section with background image and blur effect */
+.resume-section {
+  background-image: url("assets/resume-bg.jpg"); /* Replace 'resume-bg.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 250px 120px 250px;
+  border-top: 1px solid #ccc;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.resume-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Adjust the color and opacity for the blur effect */
+  backdrop-filter: blur(50px); /* Adjust the blur amount as needed */
+  z-index: -1;
+}
+
+.resume-section h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0px 0px 30px 0px;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.resume-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-list li {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.resume-list h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.resume-list p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+/* CSS for the Contact Form */
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 28px; /* Adjust the font size for the title */
+  color: #333;
+  margin: 0; /* Remove the default margin to align it better */
+  padding: 100px 0px 30px 0px;
+  text-align: center; /* Center-align the title */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+/* CSS for the Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0 10px;
+  display: inline;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.footer-space {
+  height: 300px;
+}
+
+p.copy {
+  color: #fff; /* Change the text color */
+  font-size: 14px; /* Adjust the font size */
+  margin: 20px 0px 30px 0px; /* Adjust the bottom margin */
+  /* Add any other styles you want to control */
+}

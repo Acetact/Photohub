@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Text above the banner -->
+    <div class="banner-text">
+      <h1 class="banner-title">Explore the world of photography</h1>
+      <p class="banner-caption">Traveling the horizons to get the shots</p>
+    </div>
+
+    <!-- Banner goes here -->
+    <div class="banner">
+      <img
+        src="https://images.unsplash.com/photo-1696875221702-76a6420303af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2764&q=80"
+        alt="Banner Image"
+      />
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan
+        quam vitae libero tristique, id volutpat neque lacinia. Sed condimentum
+        lacinia eros, ac malesuada arcu tincidunt a. Integer et facilisis felis,
+        a vehicula justo.Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Nullam accumsan quam vitae libero tristique, id volutpat neque
+        lacinia. Sed condimentum lacinia eros, ac malesuada arcu tincidunt a.
+        Integer et facilisis felis, a vehicula justo.Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Nullam accumsan quam vitae libero
+        tristique, id volutpat neque lacinia. Sed condimentum lacinia eros, ac
+        malesuada arcu tincidunt a. Integer et facilisis felis, a vehicula
+        justo.
+      </p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+      <h2>Work</h2>
+      <div class="video-container">
+        <video controls>
+          <source src="assets/video.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="text-container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          accumsan quam vitae libero tristique, id volutpat neque lacinia. Sed
+          condimentum lacinia eros, ac malesuada arcu tincidunt a. Integer et
+          facilisis felis, a vehicula justo. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nullam accumsan quam vitae libero
+          tristique, id volutpat neque lacinia. Sed condimentum lacinia eros, ac
+          malesuada arcu tincidunt a. Integer et facilisis felis, a vehicula
+          justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          accumsan quam vitae libero tristique, id volutpat neque lacinia. Sed
+          condimentum lacinia eros, ac malesuada arcu tincidunt a. Integer et
+          facilisis felis, a vehicula justo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+      <h2>Resume</h2>
+      <ul class="resume-list">
+        <li>
+          <h3>Contact Information</h3>
+
+          <p>
+            Ehiaguina Osin <br />
+            08145141776 <br />osinehiaguina@outlook.com
+          </p>
+
+          <p></p>
+        </li>
+        <li>
+          <h3>Education Background</h3>
+          <p>Gomycode</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            accumsan quam vitae libero tristique, id volutpat neque lacinia. Sed
+            condimentum lacinia eros, ac malesuada arcu tincidunt a. Integer et
+            facilisis felis, a vehicula justo. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nullam accumsan quam vitae libero
+            tristique, id volutpat neque lacinia. Sed condimentum lacinia eros,
+            ac malesuada arcu tincidunt a. Integer et facilisis felis, a
+            vehicula justo. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Nullam accumsan quam vitae libero tristique, id volutpat neque
+            lacinia. Sed condimentum lacinia eros, ac malesuada arcu tincidunt
+            a. Integer et facilisis felis, a vehicula justo.
+          </p>
+        </li>
+        <li>
+          <h3>Skills</h3>
+          <p>Web Developer</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            accumsan quam vitae libero tristique, id volutpat neque lacinia. Sed
+            condimentum lacinia eros, ac malesuada arcu tincidunt a. Integer et
+            facilisis felis, a vehicula justo. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nullam accumsan quam vitae libero
+            tristique, id volutpat neque lacinia. Sed condimentum lacinia eros,
+            ac malesuada arcu tincidunt a. Integer et facilisis felis, a
+            vehicula justo. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Nullam accumsan quam vitae libero tristique, id volutpat neque
+            lacinia. Sed condimentum lacinia eros, ac malesuada arcu tincidunt
+            a. Integer et facilisis felis, a vehicula justo.
+          </p>
+        </li>
+        <!-- Add more job entries as needed -->
+      </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <form action="contact.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="content">
+      <!--  page content here -->
+    </div>
+
+    <div class="footer-space"></div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Logo" />
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <p class="copy">&copy;2023 Photohub, All Rights Reserved.</p>
+      </div>
+
+      <script src="script.js"></script>
+    </footer>
+
+    <!--smooth scroll function added here beacuse it doesn't seem to work effectively when added on the script.js file-->
+    <script>
+      document
+        .querySelector('a[href="#work"]')
+        .addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent the default behavior of the link
+
+          const workSection = document.getElementById("work");
+          const targetOffset = workSection.getBoundingClientRect().top;
+          const startingY = window.pageYOffset;
+          const distance = targetOffset - startingY;
+          const duration = 2000; // Increase the duration for a slower scroll
+
+          let start;
+
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            const elapsed = timestamp - start;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo(0, startingY + distance * progress);
+
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            }
+          }
+
+          requestAnimationFrame(step);
+        });
+    </script>
+
+    <script>
+      document
+        .querySelector('a[href="#about"]')
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const aboutSection = document.getElementById("about");
+          const targetOffset = aboutSection.getBoundingClientRect().top;
+          const startingY = window.pageYOffset;
+          const distance = targetOffset - startingY;
+          const duration = 2000;
+
+          let start;
+
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            const elapsed = timestamp - start;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo(0, startingY + distance * progress);
+
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            }
+          }
+
+          requestAnimationFrame(step);
+        });
+    </script>
+
+    <script>
+      document
+        .querySelector('a[href="#resume"]')
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const aboutSection = document.getElementById("resume");
+          const targetOffset = aboutSection.getBoundingClientRect().top;
+          const startingY = window.pageYOffset;
+          const distance = targetOffset - startingY;
+          const duration = 2000;
+
+          let start;
+
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            const elapsed = timestamp - start;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo(0, startingY + distance * progress);
+
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            }
+          }
+
+          requestAnimationFrame(step);
+        });
+    </script>
+
+    <script>
+      document
+        .querySelector('a[href="#contact"]')
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const aboutSection = document.getElementById("contact");
+          const targetOffset = aboutSection.getBoundingClientRect().top;
+          const startingY = window.pageYOffset;
+          const distance = targetOffset - startingY;
+          const duration = 2000;
+
+          let start;
+
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            const elapsed = timestamp - start;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo(0, startingY + distance * progress);
+
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            }
+          }
+
+          requestAnimationFrame(step);
+        });
+    </script>
+    <!--smooth scroll function ends here beacuse it doesn't seem to work effectively when added on the script.js file-->
+  </body>
+</html>
